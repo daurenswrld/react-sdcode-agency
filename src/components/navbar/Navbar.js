@@ -10,25 +10,25 @@ const Navbar = () => {
             <div className="container">
                 <div className="nav-row">
                     <NavLink className="logo" to="/">
-                        <strong>Dauren's</strong> portfolio
+                        <strong>sdcode</strong>
                     </NavLink>
 
                     <BtnDarkMode />
 
                     <ul className="nav-list">
                         <li className="nav-list__item">
-                            <NavLink to="/cv" className={({ isActive }) => isActive ? activeLink : normalLink}>
-                                CV
+                            <NavLink to="/" className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                Главная
                             </NavLink>
                         </li>
                         <li className="nav-list__item">
                             <NavLink to="/projects" className={({ isActive }) => isActive ? activeLink : normalLink}>
-                                Projects
+                                Проекты
                             </NavLink>
                         </li>
                         <li className="nav-list__item">
                             <NavLink to="/contacts" className={({ isActive }) => isActive ? activeLink : normalLink}>
-                                Contacts
+                                Контакты
                             </NavLink>
                         </li>
                     </ul>

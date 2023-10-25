@@ -6,13 +6,15 @@ const Header = () => {
         <header className="header">
             <div className="header__wrapper">
                 <h1 className="header__title">
-                    <strong>Hi, my name is <em>Dauren</em></strong><br />
-                    a frontend developer
+                    <strong>Добро пожаловать <em>это sdcode</em></strong><br />
+                    {/* a frontend developer */}
                 </h1>
                 <div className="header__text">
-                    <p>with passion for learning and creating.</p>
+                    <p>Сайты
+                        под ключ, которые приводят к
+                        результатам.</p>
                 </div>
-                <Link to="/files/cv.pdf" target="_blank" download className="btn">Download CV</Link>
+                <Link to="https://wa.link/qcsiv2" target="_blank" download className="btn">обсудить проект</Link>
             </div>
         </header>
     );

@@ -1,0 +1,240 @@
+::-moz-selection {
+    background: #E5F3FF;
+    color: #3A81F7;
+}
+
+::selection {
+    background: #E5F3FF;
+    color: #3A81F7;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bubble_container {
+    border-radius: 40px;
+    padding: 50px;
+}
+
+.bubble_container_min {
+    padding: 50px 80px;
+    border-radius: 40px;
+}
+
+.about {
+    padding: 80px 0;
+    background: var(--about--bg);
+}
+
+.about__body {
+    background: #171717;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.about__left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.about__left h3 {
+    color: var(--about--body--heading);
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.about__left p {
+    font-size: 19px;
+    color: #FFF;
+    letter-spacing: normal;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.about__left_numbers {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.about__left_numbers_item {
+    margin-right: 40px;
+}
+
+.about__left_numbers_item h3 {
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.about__left_numbers_item p {
+    font-size: 17px;
+    color: #BABABA;
+}
+
+.about__right {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.about__right p {
+    font-weight: 300;
+    font-size: 19px;
+    color: #FFF;
+    line-height: 21px;
+    letter-spacing: normal;
+}
+
+.about__right_team {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: center;
+}
+
+
+.about__right_team h4 {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: normal;
+    margin-top: 10px;
+}
+
+.about__right_team a {
+    text-decoration: none;
+    color: #3982F7;
+    font-weight: 300;
+    letter-spacing: normal;
+    padding: 5px 0;
+}
+
+.about__right_team a:hover {
+    text-decoration: underline;
+}
+
+.about__right_team img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (max-width: 1026px) {
+    .bubble_container_min {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 918px) {
+    .about__body {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .about__left,
+    .about__right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about__left_numbers {
+        margin-top: 30px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .about__left_numbers_item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .about__right {
+        margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .about__right_team {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about__body p {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .bubble_container_min {
+        padding: 30px 25px;
+    }
+
+    .about__right_team_item {
+        width: 33.333%;
+    }
+
+    .about__right {
+        margin-top: 10px;
+    }
+
+    .about__left_numbers {
+        margin-top: 15px;
+    }
+
+    .about__left_numbers_item h3 {
+        font-size: 30px;
+    }
+
+    .about__right_team {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .about__right_team img {
+        width: 100px;
+        height: 100px;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    .about__right_team_item {
+        min-width: 140px;
+        margin: 0 8px 0 0;
+    }
+}

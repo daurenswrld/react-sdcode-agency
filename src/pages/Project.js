@@ -16,7 +16,7 @@ const Project = () => {
                     <img src={project.imgBig} alt={project.title} className="project-details__cover" />
 
                     <div className="project-details__desc">
-                        <p>Skills: {project.skills}</p>
+                        <p>Технологии: {project.skills}</p>
                     </div>
                     {project.gitHubLink && (
                         <BtnGitHub linkGit={project.gitHubLink} />
