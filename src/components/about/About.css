@@ -143,6 +143,10 @@
     -ms-user-select: none;
     user-select: none;
     pointer-events: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    object-fit: cover;
 }
 
 @media (max-width: 1026px) {

@@ -1,8 +1,8 @@
 import './About.css';
 
-import alen from '../../img/avatars/alen.svg';
-import anet from '../../img/avatars/anet.svg';
-import dauren from '../../img/avatars/dauren.svg';
+import alen from '../../img/avatars/alen.png';
+import anet from '../../img/avatars/anet.png';
+import dauren from '../../img/avatars/dauren.png';
 
 const About = () => {
     return (
